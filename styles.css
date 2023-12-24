@@ -1,0 +1,151 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(rgba(41, 110, 162, 0.5), rgba(62, 172, 226, 0.5)), url('background_image.jpg') center/cover no-repeat;
+    backdrop-filter: blur(200px); /* Adjust the blur strength as needed */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;  
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 600px;
+    background-color: #5fa1af; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+
+.task-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff9f9;
+    color: #000000;
+    resize: vertical; /* Allow vertical resizing */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+.task-form label {
+    color: #ccc;
+    font-weight: bold;
+}
+
+.task-form input,
+.task-form select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff9f9;
+    color: #000000;
+}
+
+button {
+    background-color: #005eff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-list {
+    margin-top: 30px;
+}
+
+.task {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.task:hover {
+    background-color: #555;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.task span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.filter-buttons {
+    margin-top: 30px;
+}
+
+.filter-buttons button {
+    background-color: #db9334;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #2980b9;
+}
+
+.symbol-buttons {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.symbol-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ccc;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.symbol-buttons button:hover {
+    color: #fff;
+}
